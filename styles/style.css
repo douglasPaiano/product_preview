@@ -1,0 +1,109 @@
+:root{
+    /* font */
+    --font-size: 14px;
+    --font-montserrat:'Montserrat', sans-serif;
+    --font-fraunces:'Fraunces', serif;
+    /* color */
+    --primary-cyan: hsl(158, 36%, 37%);
+    --primary-cream: hsl(30, 38%, 92%);
+    --neutral-blue: hsl(212, 21%, 14%);
+    --neutral-dark-blue: hsl(228, 12%, 48%);
+    --neutral-white: hsl(0, 0%, 100%);
+}
+body{
+    font-family: var(--font-montserrat);    
+    background-color: var(--primary-cream);
+    padding: 35px 20px;
+    font-size: var(--font-size);
+    color: var(--neutral-dark-blue);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--neutral-white);
+    border-bottom: 15px;
+    padding: 20px;
+}
+.products__img{
+    max-width: 335px;
+    max-height: 235px;
+}
+
+.img__mobile{
+    max-width: 89.5vw;
+    border-radius: 15px 15px 0px 0px;
+}
+.img__desktop{
+    display: none;
+}
+.products{
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.products__name{
+    font-family: var(--font-fraunces);
+    font-size: 30px;
+    color: var(--neutral-blue);
+}
+.products__description{
+    line-height: 20px;
+}
+.products__price{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+.product__price-main{
+    font-family: var(--font-fraunces);
+    font-size: 30px;
+    color: var(--primary-cyan);
+}
+.product__price-secondary{
+    text-decoration: line-through;
+}
+.products__cart{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid var(--primary-cyan);
+    border-radius: 5px;
+    background: var(--primary-cyan);
+    color: var(--neutral-white);
+}
+.attribution{
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 155px 370px; 
+    
+}
+.products__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img__mobile{
+    display: none;
+}
+.img__desktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    max-height: 352px;    
+    border-radius: 15px 0 0 15px;
+}
+.container{
+    width: 240px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+}
+
